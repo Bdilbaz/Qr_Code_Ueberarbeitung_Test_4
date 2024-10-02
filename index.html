@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Abteilung - Digital Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 150px; /* Adjusted for better mobile display */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #86bb22; /* Green color for the heading */
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #299e8e; /* Blue color for subheading */
+            margin-top: 5px;
+            font-size: 2em;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: auto;
+            max-width: 800px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .team-member {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .drillthrough-button {
+            display: block;
+            background-color: #299e8e; /* Blue background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin: 20px auto;
+            width: fit-content; /* Dynamic width */
+        }
+        .drillthrough-button:hover {
+            background-color: #86bb22; /* Change to green on hover */
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #299e8e;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .section-header div {
+            font-size: 1.2em;
+            color: #299e8e;
+            cursor: pointer;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .team-member {
+                flex-direction: column; /* Stack team members vertically on small screens */
+                align-items: flex-start;
+            }
+        }
+        .icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px; /* Adjust icon size */
+        }
+    </style>
+</head>
+<body>
+
+<img src="data:image/png;base64,{{logo_base64}}" alt="Green IT Logo" class="logo"> <!-- Replace with your base64 logo -->
+<img src="data:image/png;base64,{{icon_base64}}" alt="Icon" class="icon"> <!-- Replace with your base64 icon -->
+
+<div class="header">
+    <h1>Projekt Abteilung</h1>
+    <h2>Digital Development</h2>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#projects">Projekte</a></li>
+    </ul>
+</nav>
+
+<div class="section-header">
+    <div>Financial</div>
+    <div>Sales</div>
+    <div>Information</div>
+    <div>Technical</div>
+</div>
+
+<div class="container">
+    <p>
+        Das Projektteam ist verantwortlich für die Verwaltung und Analyse von
+        geschäftsspezifischen Daten. Sie spielt eine zentrale Rolle bei der Umsetzung interner
+        Digitalisierungsprojekte und arbeitet kontinuierlich an der Optimierung von
+        Geschäftsprozessen zur Steigerung von Effizienz und Produktivität. Zu den betreuten Tools
+        gehören unter anderem das Click Price Tool und das interne Dokumentationssystem ELC.
+        Darüber hinaus erstellt die Projektabteilung detaillierte Reportings und übernimmt das
+        Vertragsmanagement. Außerdem steuert die Abteilung praktische Projekte zur
+        Prozessoptimierung, um interne Abläufe zu digitalisieren und nachhaltig zu verbessern.
+    </p>
+
+    <h3 id="projects">Aktuelle Projekte</h3>
+    <ul>
+        <li>CLM-Projekt: Einführung von QR-Codes und Abwicklung und Überprüfung der Verträge</li>
+        <li>Projekt B: Beschreibung des Projekts B</li>
+    </ul>
+
+    <h3>Team</h3>
+    <div class="team-member">
+        <strong>Teamlead:</strong> <span class="contact">Sven Ricke (s.ricke@greenit.systems)</span>
+    </div>
+    <div class="team-member">
+        <strong>Contract Manager:</strong> <span class="contact">Patrick Flak (p.flak@greenit.systems)</span>
+    </div>
+    <div class="team-member">
+        <strong>Digital Manager:</strong> <span class="contact">Jannik Lodders (j.lodders@greenit.systems)</span>
+    </div>
+    <div class="team-member">
+        <strong>Working Student:</strong> <span class="contact">Robin Rosowski (r.rosowski@greenit.systems)</span>
+    </div>
+    <div class="team-member">
+        <strong>Trainee:</strong> <span class="contact">Jennifer Martens (j.martens@greenit.systems)</span>
+    </div>
+    <div class="team-member">
+        <strong>Intern:</strong> <span class="contact">Bünyamin Dilbaz (b.dilbaz@greenit.systems)</span>
+    </div>
+
+    <a href="#" class="drillthrough-button">Mehr erfahren</a>
+
+    <div class="footer">
+        Zuständige Geschäftsleitung: Florian Stäwen<br>
+        <a href="https://www.greenit.systems/" target="_blank">www.greenit.systems</a>
+    </div>
+</div>
+
+</body>
+</html>
